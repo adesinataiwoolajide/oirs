@@ -117,4 +117,4 @@
         return confirm("Click okay to Edit Revenue and Cancel to Stop");
     }
 </script>    
-<?php require '../table-footer.php'; require '../alert.php'; ?>
+<?php require 'admin/table-footer.php'; require '../alert.php'; ?>

@@ -84,22 +84,22 @@
 				$nn= $this->operationHistory($action, $email);
 				$_SESSION['success'] = $_SESSION['name']. " ". "Welcome to Ministry of Finance Internal Generated Revenue Dashboard";
 				$this->redirect("ministry-of-finance/./");
-			}elseif($access ==2){
-				$nn= $this->operationHistory($action, $email);
-				$_SESSION['success'] = $_SESSION['name']. " ". "Welcome to Internal Generated Revenue Head of Department Dashboard";
-				$this->redirect("head-of-department/./");
+			// }elseif($access ==2){
+			// 	$nn= $this->operationHistory($action, $email);
+			// 	$_SESSION['success'] = $_SESSION['name']. " ". "Welcome to Internal Generated Revenue Head of Department Dashboard";
+			// 	$this->redirect("head-of-department/./");
 			}elseif($access ==3){
 				$nn= $this->operationHistory($action, $email);
 				$_SESSION['success'] = $_SESSION['name']. " ". "Welcome to Internal Generated Revenue Staff Dashboard";
 				$this->redirect("revenue-officer/./");
-			}elseif($access ==4){
-				$nn= $this->operationHistory($action, $email);
-				$_SESSION['success'] = $_SESSION['name']. " ". "Welcome to Internal Generated Revenue Account Department Dashboard";
-				$this->redirect("director/./");
-			}elseif($access ==5){
-				$nn= $this->operationHistory($action, $email);
-				$_SESSION['success'] = $_SESSION['name']. " ". "Welcome to Internal Generated Revenue Ministry Staff Dashboard";
-				$this->redirect("minitry-staff/./");
+			// }elseif($access ==4){
+			// 	$nn= $this->operationHistory($action, $email);
+			// 	$_SESSION['success'] = $_SESSION['name']. " ". "Welcome to Internal Generated Revenue Account Department Dashboard";
+			// 	$this->redirect("director/./");
+			// }elseif($access ==5){
+			// 	$nn= $this->operationHistory($action, $email);
+			// 	$_SESSION['success'] = $_SESSION['name']. " ". "Welcome to Internal Generated Revenue Ministry Staff Dashboard";
+			// 	$this->redirect("minitry-staff/./");
 			}else{
 				$_SESSION['error'] = "Your are an Invalid User";
 				$this->redirect("../.././");

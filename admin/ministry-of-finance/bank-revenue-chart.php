@@ -1,5 +1,7 @@
 <?php
     require '../header.php';
+    require 'libs_dev/staff/staff_class.php';
+    $staffBiodata = new staffBiodataIGR($db);
     require '../side-bar.php';
     require '../ict-department/libs_dev/local-ministry/local_ministry_class.php';
     require '../ict-department/libs_dev/revenue/revenue_class.php';

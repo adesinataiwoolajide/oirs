@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.9.1
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 05, 2018 at 11:21 AM
--- Server version: 10.1.16-MariaDB
--- PHP Version: 7.0.9
+-- Generation Time: Dec 09, 2019 at 10:12 AM
+-- Server version: 10.4.8-MariaDB
+-- PHP Version: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -30,7 +32,7 @@ CREATE TABLE `activity` (
   `act_id` int(255) NOT NULL,
   `action` text NOT NULL,
   `user_details` varchar(255) NOT NULL,
-  `time_added` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `time_added` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -145,27 +147,27 @@ INSERT INTO `activity` (`act_id`, `action`, `user_details`, `time_added`) VALUES
 (105, 'Added MINISTRY OF FINACE with Ministry Code OSUN/MIN/001110 To The Ministry List', 'tolajide74@gmail.com', '2018-07-30 08:54:16'),
 (106, 'Logged Out', 'tolajide74@gmail.com', '2018-07-30 08:54:34'),
 (107, 'Logged In', 'favour@gmail.com', '2018-07-30 19:01:30'),
-(108, 'Added Mr Lolade Raheem ''s Payment For PRIMARY SCHOOL TESTIMONIAL To  Revenue Account', 'favour@gmail.com', '2018-07-30 21:02:46'),
-(109, 'Added Miss Damilola K ''s Payment For PRIMARY SIX LEAVING CERTIFICATE To  Revenue Account', 'favour@gmail.com', '2018-07-30 21:04:02'),
-(110, 'Added Mrs Adesina Kemi ''s Payment For PRIMARY SIX LEAVING CERTIFICATE To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-07-30 21:06:35'),
-(111, 'Added Miss Omobosola N ''s Payment For PRIMARY SCHOOL TESTIMONIAL To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-07-30 21:59:52'),
-(112, 'Added Akingbala Jemimah ''s Payment For SSCE CERTIFICATE To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-07-30 22:12:09'),
-(113, 'Added Adeoba Hammed ''s Payment For SSCE CERTIFICATE To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-07-30 22:14:12'),
-(114, 'Added Tobiloba Joseph ''s Payment For PRIMARY SIX LEAVING CERTIFICATE To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-07-30 22:17:54'),
-(115, 'Added Olamide Peter ''s Payment For SSCE CERTIFICATE To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-01 13:53:00'),
+(108, 'Added Mr Lolade Raheem \'s Payment For PRIMARY SCHOOL TESTIMONIAL To  Revenue Account', 'favour@gmail.com', '2018-07-30 21:02:46'),
+(109, 'Added Miss Damilola K \'s Payment For PRIMARY SIX LEAVING CERTIFICATE To  Revenue Account', 'favour@gmail.com', '2018-07-30 21:04:02'),
+(110, 'Added Mrs Adesina Kemi \'s Payment For PRIMARY SIX LEAVING CERTIFICATE To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-07-30 21:06:35'),
+(111, 'Added Miss Omobosola N \'s Payment For PRIMARY SCHOOL TESTIMONIAL To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-07-30 21:59:52'),
+(112, 'Added Akingbala Jemimah \'s Payment For SSCE CERTIFICATE To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-07-30 22:12:09'),
+(113, 'Added Adeoba Hammed \'s Payment For SSCE CERTIFICATE To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-07-30 22:14:12'),
+(114, 'Added Tobiloba Joseph \'s Payment For PRIMARY SIX LEAVING CERTIFICATE To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-07-30 22:17:54'),
+(115, 'Added Olamide Peter \'s Payment For SSCE CERTIFICATE To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-01 13:53:00'),
 (116, 'Logged Out', 'favour@gmail.com', '2018-08-01 14:15:30'),
 (117, 'Logged In', 'favour@gmail.com', '2018-08-03 07:56:23'),
-(118, 'Added Kazeem Abolade ''s Payment For PRIMARY SCHOOL TESTIMONIAL To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:00:47'),
-(119, 'Added Taiwo Ololade ''s Payment For SSCE CERTIFICATE To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:03:33'),
-(120, 'Added Ronnie Hammed ''s Payment For PRIMARY SCHOOL TESTIMONIAL To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:07:00'),
-(121, 'Updated Taiwo Ololade Olajide ''s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/001 To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:22:57'),
-(122, 'Updated Taiwo Ololade Olajide ''s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/001 To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:24:17'),
-(123, 'Updated Taiwo Ololade ''s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/001 To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:24:38'),
-(124, 'Updated Taiwo Ololade ''s Payment For SSCE CERTIFICATE with the Reciept Number  To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:24:57'),
-(125, 'Updated Taiwo Ololade ''s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/001 To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:25:24'),
-(126, 'Updated Taiwo Ololade ''s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/001 To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:25:45'),
-(127, 'Updated Taiwo Ololade Olajide ''s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/001 To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:25:55'),
-(128, 'Updated Taiwo Ololade Olajide ''s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/001 To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:26:10'),
+(118, 'Added Kazeem Abolade \'s Payment For PRIMARY SCHOOL TESTIMONIAL To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:00:47'),
+(119, 'Added Taiwo Ololade \'s Payment For SSCE CERTIFICATE To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:03:33'),
+(120, 'Added Ronnie Hammed \'s Payment For PRIMARY SCHOOL TESTIMONIAL To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:07:00'),
+(121, 'Updated Taiwo Ololade Olajide \'s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/001 To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:22:57'),
+(122, 'Updated Taiwo Ololade Olajide \'s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/001 To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:24:17'),
+(123, 'Updated Taiwo Ololade \'s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/001 To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:24:38'),
+(124, 'Updated Taiwo Ololade \'s Payment For SSCE CERTIFICATE with the Reciept Number  To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:24:57'),
+(125, 'Updated Taiwo Ololade \'s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/001 To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:25:24'),
+(126, 'Updated Taiwo Ololade \'s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/001 To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:25:45'),
+(127, 'Updated Taiwo Ololade Olajide \'s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/001 To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:25:55'),
+(128, 'Updated Taiwo Ololade Olajide \'s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/001 To MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:26:10'),
 (129, 'Deleted Payment Made by Adeoba Hammed with the Reciept Number OS/ORI/07/18/006 for SSCE CERTIFICATE From MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:40:13'),
 (130, 'Deleted Payment Made by Adeoba Hammed with the Reciept Number OS/ORI/07/18/006 for SSCE CERTIFICATE From MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-03 08:41:21'),
 (131, 'Logged Out', 'favour@gmail.com', '2018-08-03 15:54:40'),
@@ -189,15 +191,15 @@ INSERT INTO `activity` (`act_id`, `action`, `user_details`, `time_added`) VALUES
 (149, 'Logged In', 'tolajide74@gmail.com', '2018-08-10 09:23:42'),
 (150, 'Logged Out', 'tolajide74@gmail.com', '2018-08-10 09:27:55'),
 (151, 'Logged In', 'favour@gmail.com', '2018-08-10 09:28:05'),
-(152, 'Added Afolabi Kabel ''s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/003 To MINISTRY OF EDUCATION Revenue Account ', 'favour@gmail.com', '2018-08-10 09:29:52'),
+(152, 'Added Afolabi Kabel \'s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/003 To MINISTRY OF EDUCATION Revenue Account ', 'favour@gmail.com', '2018-08-10 09:29:52'),
 (153, 'Logged Out', 'favour@gmail.com', '2018-08-10 09:30:15'),
 (154, 'Logged In', 'tolajide74@gmail.com', '2018-08-10 09:30:22'),
 (155, 'Logged Out', 'tolajide74@gmail.com', '2018-08-10 10:00:58'),
 (156, 'Logged In', 'favour@gmail.com', '2018-08-10 10:01:07'),
-(157, 'Added New Testing ''s Payment For PRIMARY SCHOOL TESTIMONIAL with the Reciept Number OS/ORI/08/18/004 To MINISTRY OF EDUCATION Revenue Account ', 'favour@gmail.com', '2018-08-10 10:13:10'),
+(157, 'Added New Testing \'s Payment For PRIMARY SCHOOL TESTIMONIAL with the Reciept Number OS/ORI/08/18/004 To MINISTRY OF EDUCATION Revenue Account ', 'favour@gmail.com', '2018-08-10 10:13:10'),
 (158, 'Deleted Payment Made by New Testing with the Reciept Number OS/ORI/08/18/004 for PRIMARY SCHOOL TESTIMONIAL From MINISTRY OF EDUCATION Revenue Account', 'favour@gmail.com', '2018-08-10 10:13:19'),
-(159, 'Added New Testing ''s Payment For PRIMARY SIX LEAVING CERTIFICATE with the Reciept Number OS/ORI/08/18/004 To MINISTRY OF EDUCATION Revenue Account ', 'favour@gmail.com', '2018-08-10 10:14:06'),
-(160, 'Added Lasisi Wasiu ''s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/005 To MINISTRY OF EDUCATION Revenue Account ', 'favour@gmail.com', '2018-08-10 10:17:12'),
+(159, 'Added New Testing \'s Payment For PRIMARY SIX LEAVING CERTIFICATE with the Reciept Number OS/ORI/08/18/004 To MINISTRY OF EDUCATION Revenue Account ', 'favour@gmail.com', '2018-08-10 10:14:06'),
+(160, 'Added Lasisi Wasiu \'s Payment For SSCE CERTIFICATE with the Reciept Number OS/ORI/08/18/005 To MINISTRY OF EDUCATION Revenue Account ', 'favour@gmail.com', '2018-08-10 10:17:12'),
 (161, 'Logged Out', 'favour@gmail.com', '2018-08-10 10:23:56'),
 (162, 'Logged In', 'tolajide74@gmail.com', '2018-08-10 10:23:58'),
 (163, 'Logged Out', 'tolajide74@gmail.com', '2018-08-10 10:50:14'),
@@ -229,7 +231,7 @@ CREATE TABLE `admin_login` (
   `user_name` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `access_level` int(1) NOT NULL,
-  `time_registered` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `time_registered` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -303,7 +305,7 @@ CREATE TABLE `local_govt` (
   `local_govt_id` int(255) NOT NULL,
   `local_govt_name` text NOT NULL,
   `local_govt_code` varchar(255) NOT NULL,
-  `time_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `time_added` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -328,7 +330,7 @@ CREATE TABLE `ministry` (
   `ministry_name` text NOT NULL,
   `ministry_code` varchar(255) NOT NULL,
   `ministry_logo` text NOT NULL,
-  `time_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `time_added` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -357,7 +359,7 @@ CREATE TABLE `source_revenue` (
   `source_name` varchar(255) NOT NULL,
   `ministry_id` int(255) NOT NULL,
   `revenue_amount` varchar(255) NOT NULL,
-  `time_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `time_added` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -395,7 +397,7 @@ CREATE TABLE `staff_biodata` (
   `state_origin` varchar(255) NOT NULL,
   `staff_level` varchar(255) NOT NULL,
   `type_id` int(255) NOT NULL,
-  `time_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `time_added` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -417,7 +419,7 @@ INSERT INTO `staff_biodata` (`staff_id`, `staff_passport`, `staff_name`, `staff_
 CREATE TABLE `staff_category` (
   `category_id` int(255) NOT NULL,
   `category_name` varchar(255) NOT NULL,
-  `time_added` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `time_added` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -437,7 +439,7 @@ INSERT INTO `staff_category` (`category_id`, `category_name`, `time_added`) VALU
 CREATE TABLE `staff_type` (
   `type_id` int(255) NOT NULL,
   `type_name` varchar(255) NOT NULL,
-  `time_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `time_added` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -470,7 +472,7 @@ CREATE TABLE `state_revenue` (
   `today` varchar(255) NOT NULL,
   `rev_month` varchar(255) NOT NULL,
   `year` varchar(255) NOT NULL,
-  `time_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `time_added` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -491,6 +493,27 @@ INSERT INTO `state_revenue` (`revenue_id`, `local_govt_id`, `staff_number`, `sou
 (13, 2, 'OS/18/002', 11, 'Afolabi Kabel', '09087866689', 'The Adress given', 'OS/ORI/08/18/003', '10', '08', '2018', '2018-08-10 10:17:39'),
 (15, 2, 'OS/18/002', 1, 'New Testing', '090787857483', 'Ikole Ekiti', 'OS/ORI/08/18/004', '10', '08', '2018', '2018-08-10 10:17:31'),
 (16, 2, 'OS/18/002', 11, 'Lasisi Wasiu', '09076547847', 'Ikire Osun State', 'OS/ORI/08/18/005', '10', '08', '2018', '2018-08-10 10:17:12');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `vault`
+--
+
+CREATE TABLE `vault` (
+  `vault_id` int(255) NOT NULL,
+  `total_amount` varchar(255) NOT NULL,
+  `bank_name` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `vault`
+--
+
+INSERT INTO `vault` (`vault_id`, `total_amount`, `bank_name`, `created_at`) VALUES
+(1, '20000', 'Wema Bank', '2019-12-09 09:08:19'),
+(2, '40000', 'First Bank', '2019-12-09 09:09:11');
 
 --
 -- Indexes for dumped tables
@@ -557,6 +580,12 @@ ALTER TABLE `state_revenue`
   ADD PRIMARY KEY (`revenue_id`);
 
 --
+-- Indexes for table `vault`
+--
+ALTER TABLE `vault`
+  ADD PRIMARY KEY (`vault_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -565,51 +594,68 @@ ALTER TABLE `state_revenue`
 --
 ALTER TABLE `activity`
   MODIFY `act_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=179;
+
 --
 -- AUTO_INCREMENT for table `admin_login`
 --
 ALTER TABLE `admin_login`
   MODIFY `user_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
 --
 -- AUTO_INCREMENT for table `generated_numbers`
 --
 ALTER TABLE `generated_numbers`
   MODIFY `last_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
 --
 -- AUTO_INCREMENT for table `local_govt`
 --
 ALTER TABLE `local_govt`
   MODIFY `local_govt_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
 --
 -- AUTO_INCREMENT for table `ministry`
 --
 ALTER TABLE `ministry`
   MODIFY `ministry_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
 --
 -- AUTO_INCREMENT for table `source_revenue`
 --
 ALTER TABLE `source_revenue`
   MODIFY `source_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
 --
 -- AUTO_INCREMENT for table `staff_biodata`
 --
 ALTER TABLE `staff_biodata`
   MODIFY `staff_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT for table `staff_category`
 --
 ALTER TABLE `staff_category`
   MODIFY `category_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT for table `staff_type`
 --
 ALTER TABLE `staff_type`
   MODIFY `type_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT for table `state_revenue`
 --
 ALTER TABLE `state_revenue`
   MODIFY `revenue_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT for table `vault`
+--
+ALTER TABLE `vault`
+  MODIFY `vault_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

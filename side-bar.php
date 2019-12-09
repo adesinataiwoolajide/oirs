@@ -11,6 +11,6 @@
             <span class="app-menu__label">Daily Report </span></a></li>
             <li><a class="app-menu__item active" href="monthly-report.php"><i class="app-menu__icon fa fa-bell"></i><span class="app-menu__label">  Monthly Report</span></a></li>
             <li><a class="app-menu__item active" href="yearly-report.php"><i class="app-menu__icon fa fa-calendar"></i><span class="app-menu__label">  Yearly Report</span></a></li>
-            <li><a class="app-menu__item active" href="yearly-report.php"><i class="app-menu__icon fa fa-bell"></i><span class="app-menu__label">  View All Report </span></a></li>
+            <li><a class="app-menu__item active" href="view-all-revenue.php"><i class="app-menu__icon fa fa-bell"></i><span class="app-menu__label">  View All Report </span></a></li>
          </ul>
     </aside>
